@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //задание №1
+        'use strict'
+        let tc = 25;
+        let tf = (9 / 5) * tc + 32;
+        alert(tf);
+        //задание №2
+        let name = 'Василий';
+        let admine = name
+        console.log(admine);
+        //Задание №3
+        let result1 = 10 + 10 + '10';
+        console.log(result1)
+        let result2 = 10 + '10' + 10;
+        console.log(result2)
+        let result3 = 10 + 10 + +'10';
+        console.log(result3)
+        let result4 = 10 / -'';
+        console.log(result4)
+        let result5 = 10 / +'2,5'
+        console.log(result5)
+        /*
+        1. 20 сумма двух чисел 10 слеилась со строкой 10, итог 2010
+        2. число 10 склеивается со строкой 10, получается строка 1010 которая склеивается с числом 10, итог 101010
+        3. унарный'+' перед последней десяткой превращает строку в число, итог сумма из 3 чисел '10'
+        4. кавычки заменяют число ноль, унарный минус делает его отрицательным, деление любого числа, у нас 10, на -0 дает в результате отрицательную бесконечность
+        5. деление не осуществляется так как 2,5 не является числом из-за запятой
+        */
+    </script>
+</body>
+
+</html>
