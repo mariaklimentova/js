@@ -1,15 +1,23 @@
-let a = (parseInt(prompt("введите число 'a'")));
-let b = (parseInt(prompt("введите число 'b'")));
+const products = [
+    {
+        id: 3,
+        price: 200,
+    },
+    {
+        id: 4,
+        price: 900,
+    },
+    {
+        id: 1,
+        price: 1000,
+    },
+];
 
-if (a >= 0 && b >= 0) {
-    alert(a - b)
+function priceSale(sale) {
+    console.log(sale.price * 0.85);
+
 }
-if (a < 0 && b < 0) {
-    alert(a * b)
-}
-if (a < 0 && b >= 0) {
-    alert(a + b)
-}
-if (a >= 0 && b < 0) {
-    alert(a + b)
-}
+
+products.forEach(priceSale)
+
+
